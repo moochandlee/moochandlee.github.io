@@ -10,3 +10,12 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+
+author:
+  name   : "Moochan Daniel Lee"
+  avatar : "/assets/images/headshot.jpg" # You'll need to upload this
+  bio    : "Aspiring Equity Research Analyst"
+  links:
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/moochan-lee/"
