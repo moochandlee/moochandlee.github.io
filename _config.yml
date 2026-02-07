@@ -1,3 +1,12 @@
-theme: jekyll-theme-minimal
-title: Moochan's homepage
-description: Bookmark this to keep an eye on my project updates!
+title: "Moochan's homepage"
+remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "air"
+paginate: 5
+locale: "en-US"
+
+# Plugins
+plugins:
+  - jekyll-remote-theme
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
