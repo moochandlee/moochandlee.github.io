@@ -12,6 +12,13 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
 
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  entity_output: as_char
+
 author:
   name   : "Moochan Daniel Lee"
   avatar : "/assets/images/headshot.jpg" # You'll need to upload this
