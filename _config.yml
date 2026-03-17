@@ -4,6 +4,7 @@ remote_theme: "mmistakes/minimal-mistakes"
 minimal_mistakes_skin: "air"
 paginate: 5
 locale: "en-US"
+permalink: pretty
 
 # Plugins
 plugins:
