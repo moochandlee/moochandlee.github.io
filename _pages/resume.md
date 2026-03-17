@@ -134,6 +134,12 @@ header:
   .page__title {
   display: none;
   }
+  .page__content {
+  width: 100%;
+  }
+  .resume-wrapper {
+  max-width: 100%;
+  }
 </style>
 
 <div class="resume-wrapper">
