@@ -7,4 +7,5 @@ excerpt: "A deep dive into Apple's ecosystem stickiness and margin expansion."
 sidebar:
   nav: "rivian_report"
 ---
+## Executive Summary {: #summary}
 Your summary of the report goes here...
