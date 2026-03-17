@@ -5,6 +5,8 @@ minimal_mistakes_skin: "air"
 paginate: 5
 locale: "en-US"
 permalink: pretty
+include:
+  - _pages
 
 # Plugins
 plugins:
