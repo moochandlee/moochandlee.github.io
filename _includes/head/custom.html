@@ -12,41 +12,50 @@
 </script>
 
 <style>
-  /* Base Dark Mode Colors */
+  /* Global Dark Mode Styling */
   body.dark-mode {
-    background-color: #111111 !important; /* Deep black */
-    color: #eeeeee !important;           /* Off-white text */
+    background-color: #111111 !important;
+    color: #ffffff !important; /* Pure white for better readability */
   }
 
-  /* Fix the Header and Masthead */
+  /* Fix Header (Masthead) Visibility */
   body.dark-mode .masthead {
     background-color: #111111 !important;
-    border-bottom: 1px solid #333 !important;
+    border-bottom: 1px solid #333333 !important;
   }
+
+  /* Site Title and Subtitle Styling */
   body.dark-mode .site-title, 
+  body.dark-mode .site-title a,
   body.dark-mode .site-subtitle {
-    color: #eeeeee !important;
+    color: #ffffff !important; /* Changes text from invisible to white */
   }
 
-  /* Fix the Sidebar and Main Content */
-  body.dark-mode .sidebar, 
-  body.dark-mode .page__content {
+  /* Vibrant Blue for Interactive Elements */
+  body.dark-mode a,
+  body.dark-mode .nav__items a,
+  body.dark-mode .sidebar a {
+    color: #007bff !important; /* Vibrant Financial Blue */
+    font-weight: 500;
+  }
+
+  body.dark-mode a:hover {
+    color: #00aaff !important; /* Brighter blue on hover */
+    text-decoration: underline;
+  }
+
+  /* Post Titles and Headings */
+  body.dark-mode .archive__item-title a,
+  body.dark-mode .page__title,
+  body.dark-mode h1, body.dark-mode h2, body.dark-mode h3 {
+    color: #ffffff !important;
+  }
+
+  /* Clean up Footer and Sidebar */
+  body.dark-mode .page__footer,
+  body.dark-mode .sidebar {
     background-color: #111111 !important;
-    color: #eeeeee !important;
-  }
-
-  /* Fix the Footer (The Blue Bar) */
-  body.dark-mode .page__footer {
-    background-color: #111111 !important;
-    color: #888888 !important;
-    border-top: 1px solid #333 !important;
-  }
-
-  /* Professional Link Colors (Financial Blue) */
-  body.dark-mode a {
-    color: #3498db !important;
-  }
-  body.dark-mode .archive__item-title a {
-    color: #eeeeee !important;
+    color: #ffffff !important;
+    border: none !important;
   }
 </style>
