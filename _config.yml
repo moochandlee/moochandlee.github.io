@@ -1,8 +1,10 @@
-title: "Moochan's homepage"
+title: "Moochan Daniel Lee"
+subtitle: "Equity Research Portfolio"
 remote_theme: "mmistakes/minimal-mistakes"
 minimal_mistakes_skin: "air"
 paginate: 5
 locale: "en-US"
+permalink: pretty
 
 # Plugins
 plugins:
