@@ -5,6 +5,8 @@ minimal_mistakes_skin: "air"
 paginate: 5
 locale: "en-US"
 permalink: pretty
+include:
+  - _pages
 
 # Plugins
 plugins:
@@ -17,6 +19,7 @@ author:
   name   : "Moochan Daniel Lee"
   avatar : "/assets/images/headshot.jpg" # You'll need to upload this
   bio    : "Aspiring Equity Research Analyst"
+  url:"/resume/"
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
