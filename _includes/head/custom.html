@@ -8,6 +8,19 @@
     }
   });
 </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var authorName = document.querySelector("h3.author__name");
+    if (authorName && !authorName.closest("a")) {
+      var link = document.createElement("a");
+      link.href = "/resume/";
+      link.style.textDecoration = "none";
+      link.style.color = "inherit";
+      authorName.parentNode.insertBefore(link, authorName);
+      link.appendChild(authorName);
+    }
+  });
+</script>
 <style>
   body.dark-mode {
     background-color: #111111 !important;
