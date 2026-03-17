@@ -3,6 +3,8 @@ title: "Resume"
 layout: single
 permalink: /resume/
 author_profile: true
+header:
+  overlay_color: "transparent"
 ---
 
 <style>
@@ -128,6 +130,9 @@ author_profile: true
     font-weight: 600;
     min-width: 110px;
     flex-shrink: 0;
+  }
+  .page__title {
+  display: none;
   }
 </style>
 
