@@ -1,23 +1,28 @@
 <script>
   document.addEventListener("DOMContentLoaded", function() {
+    // Dark mode
     var now = new Date();
     var hour = now.getHours();
     var body = document.querySelector("body");
     if (hour >= 18 || hour < 7) {
       body.classList.add("dark-mode");
     }
-  });
-</script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
+
+    // Author name link
     var authorName = document.querySelector("h3.author__name");
-    if (authorName && !authorName.closest("a")) {
-      var link = document.createElement("a");
-      link.href = "/resume/";
-      link.style.textDecoration = "none";
-      link.style.color = "inherit";
-      authorName.parentNode.insertBefore(link, authorName);
-      link.appendChild(authorName);
+    if (authorName) {
+      var innerLink = authorName.querySelector("a.u-url");
+      if (innerLink) {
+        innerLink.replaceWith(...innerLink.childNodes);
+      }
+      if (!authorName.closest("a[href='/resume/']")) {
+        var link = document.createElement("a");
+        link.href = "/resume/";
+        link.style.textDecoration = "none";
+        link.style.color = "inherit";
+        authorName.parentNode.insertBefore(link, authorName);
+        link.appendChild(authorName);
+      }
     }
   });
 </script>
@@ -26,8 +31,6 @@
     background-color: #111111 !important;
     color: #ffffff !important;
   }
-
-  /* Masthead — target every element inside it */
   body.dark-mode .masthead,
   body.dark-mode .masthead__inner-wrap,
   body.dark-mode nav.greedy-nav,
@@ -37,8 +40,6 @@
     background-color: #111111 !important;
     border-bottom: 1px solid #111111 !important;
   }
-
-  /* Site title and subtitle */
   body.dark-mode .site-title,
   body.dark-mode .site-title a,
   body.dark-mode .site-subtitle,
@@ -47,46 +48,38 @@
     color: #ffffff !important;
     background-color: transparent !important;
   }
-
-  /* Nav links in masthead */
   body.dark-mode .greedy-nav a,
   body.dark-mode .greedy-nav .visible-links a {
     color: #ffffff !important;
     background-color: transparent !important;
   }
-
   body.dark-mode a,
   body.dark-mode .nav__items a,
   body.dark-mode .sidebar a {
     color: #ffffff !important;
     font-weight: 500;
   }
-
   body.dark-mode a:hover {
     color: #00aaff !important;
     text-decoration: underline;
   }
-
   body.dark-mode .archive__item-title a,
   body.dark-mode .page__title,
   body.dark-mode h1, body.dark-mode h2, body.dark-mode h3 {
     color: #ffffff !important;
   }
-
   body.dark-mode .page__footer,
   body.dark-mode .sidebar {
     background-color: #111111 !important;
     color: #ffffff !important;
     border: none !important;
   }
-  .page__content p {
-    font-size: 0.85em;
-    line-height: 1.6;
-  }
   .page__content p,
   .page__content ul,
   .page__content li,
   .page__content .skills-grid {
-  font-family: "Georgia", "Times New Roman", serif;
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 0.85em;
+    line-height: 1.6;
   }
 </style>
