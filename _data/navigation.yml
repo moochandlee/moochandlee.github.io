@@ -1,0 +1,7 @@
+rivian_report:
+  - title: "Executive Summary"
+    url: "#summary"
+  - title: "Financial Analysis"
+    url: "#financials"
+  - title: "Valuation & DCF"
+    url: "#valuation"
