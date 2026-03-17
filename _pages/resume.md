@@ -21,11 +21,15 @@ author_profile: true
     min-width: 300px !important;
   }
 
-  .page__inner-wrap,
+   .page__inner-wrap {
+    width: calc(100% - 320px) !important;
+    margin-left: 320px !important;
+    float: none !important;
+  }
+
   .page__content {
     width: 100% !important;
     max-width: 100% !important;
-    float: none !important;
   }
 
   .resume-wrapper {
