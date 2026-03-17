@@ -12,18 +12,41 @@
 </script>
 
 <style>
-  /* This style only triggers during Dark hours */
+  /* Base Dark Mode Colors */
   body.dark-mode {
-    background-color: #1d1f21 !important;
-    color: #c5c8c6 !important;
+    background-color: #111111 !important; /* Deep black */
+    color: #eeeeee !important;           /* Off-white text */
   }
+
+  /* Fix the Header and Masthead */
+  body.dark-mode .masthead {
+    background-color: #111111 !important;
+    border-bottom: 1px solid #333 !important;
+  }
+  body.dark-mode .site-title, 
+  body.dark-mode .site-subtitle {
+    color: #eeeeee !important;
+  }
+
+  /* Fix the Sidebar and Main Content */
   body.dark-mode .sidebar, 
-  body.dark-mode .page__content,
-  body.dark-mode .archive__item-title {
-    background-color: #1d1f21 !important;
-    color: #c5c8c6 !important;
+  body.dark-mode .page__content {
+    background-color: #111111 !important;
+    color: #eeeeee !important;
   }
+
+  /* Fix the Footer (The Blue Bar) */
+  body.dark-mode .page__footer {
+    background-color: #111111 !important;
+    color: #888888 !important;
+    border-top: 1px solid #333 !important;
+  }
+
+  /* Professional Link Colors (Financial Blue) */
   body.dark-mode a {
-    color: #81a2be !important;
+    color: #3498db !important;
+  }
+  body.dark-mode .archive__item-title a {
+    color: #eeeeee !important;
   }
 </style>
