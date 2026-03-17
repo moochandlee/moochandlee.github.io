@@ -1,0 +1,29 @@
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var now = new Date();
+    var hour = now.getHours();
+    var body = document.querySelector("body");
+
+    // Define 'Dark' hours (6 PM to 7 AM)
+    if (hour >= 18 || hour < 7) {
+      body.classList.add("dark-mode");
+    }
+  });
+</script>
+
+<style>
+  /* This style only triggers during Dark hours */
+  body.dark-mode {
+    background-color: #1d1f21 !important;
+    color: #c5c8c6 !important;
+  }
+  body.dark-mode .sidebar, 
+  body.dark-mode .page__content,
+  body.dark-mode .archive__item-title {
+    background-color: #1d1f21 !important;
+    color: #c5c8c6 !important;
+  }
+  body.dark-mode a {
+    color: #81a2be !important;
+  }
+</style>
