@@ -3,55 +3,63 @@
     var now = new Date();
     var hour = now.getHours();
     var body = document.querySelector("body");
-
-    // Define 'Dark' hours (6 PM to 7 AM)
     if (hour >= 18 || hour < 7) {
       body.classList.add("dark-mode");
     }
   });
 </script>
-
 <style>
-  /* Global Dark Mode Styling */
   body.dark-mode {
     background-color: #111111 !important;
-    color: #ffffff !important; /* Pure white for better readability */
+    color: #ffffff !important;
   }
 
-  /* Fix Header (Masthead) Visibility */
-  body.dark-mode .masthead {
+  /* Masthead — target every element inside it */
+  body.dark-mode .masthead,
+  body.dark-mode .masthead__inner-wrap,
+  body.dark-mode nav.greedy-nav,
+  body.dark-mode .greedy-nav,
+  body.dark-mode .greedy-nav .visible-links,
+  body.dark-mode .greedy-nav__toggle {
     background-color: #111111 !important;
     border-bottom: 1px solid #333333 !important;
   }
 
-  /* Site Title and Subtitle Styling */
-  body.dark-mode .site-title, 
+  /* Site title and subtitle */
+  body.dark-mode .site-title,
   body.dark-mode .site-title a,
-  body.dark-mode .site-subtitle {
-    color: #ffffff !important; /* Changes text from invisible to white */
+  body.dark-mode .site-subtitle,
+  body.dark-mode .masthead .site-title,
+  body.dark-mode .masthead .site-title a {
+    color: #ffffff !important;
+    background-color: transparent !important;
   }
 
-  /* Vibrant Blue for Interactive Elements */
+  /* Nav links in masthead */
+  body.dark-mode .greedy-nav a,
+  body.dark-mode .greedy-nav .visible-links a {
+    color: #ffffff !important;
+    background-color: transparent !important;
+  }
+
   body.dark-mode a,
   body.dark-mode .nav__items a,
   body.dark-mode .sidebar a {
-    color: #007bff !important; /* Vibrant Financial Blue */
+    color: #007bff !important;
     font-weight: 500;
   }
 
   body.dark-mode a:hover {
-    color: #00aaff !important; /* Brighter blue on hover */
+    color: #00aaff !important;
     text-decoration: underline;
   }
 
-  /* Post Titles and Headings */
   body.dark-mode .archive__item-title a,
   body.dark-mode .page__title,
   body.dark-mode h1, body.dark-mode h2, body.dark-mode h3 {
     color: #ffffff !important;
   }
 
-  /* Clean up Footer and Sidebar */
   body.dark-mode .page__footer,
   body.dark-mode .sidebar {
     background-color: #111111 !important;
