@@ -1,6 +1,6 @@
 rivian_report:
   - title: "Executive Summary"
-    url: "#summary"
+    url: "/2026/03/10/rivn_report/#summary"
   - title: "Financial Analysis"
     url: "#financials"
   - title: "Valuation & DCF"
