@@ -6,15 +6,19 @@ author_profile: true
 ---
 
 <style>
-  .resume-wrapper {
-    font-family: "Georgia", "Times New Roman", serif;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0;
-  }
-
   .page__title {
     display: none;
+  }
+
+  .page {
+    width: 95% !important;
+    max-width: 1600px !important;
+    margin: 0 auto !important;
+  }
+
+  .sidebar {
+    width: 300px !important;
+    min-width: 300px !important;
   }
 
   .page__inner-wrap,
@@ -22,6 +26,13 @@ author_profile: true
     width: 100% !important;
     max-width: 100% !important;
     float: none !important;
+  }
+
+  .resume-wrapper {
+    font-family: "Georgia", "Times New Roman", serif;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
   }
 
   .resume-header {
