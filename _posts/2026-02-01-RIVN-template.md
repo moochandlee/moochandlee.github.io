@@ -9,5 +9,6 @@ sidebar:
   nav: "rivian_report"
 ---
 
-## Executive Summary {: #summary}
+<a id="summary"></a>
+## Executive Summary
 (Your text here...)
