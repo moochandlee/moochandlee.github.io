@@ -16,10 +16,10 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "Moochan Daniel Lee"
-  avatar : "/assets/images/headshot.jpg" # You'll need to upload this
-  bio    : "Aspiring Equity Research Analyst"
-  url    : "/resume/"
+  name : "Moochan Daniel Lee"
+  avatar: "/assets/images/headshot.jpg"
+  bio: "Aspiring Equity Research Analyst"
+  url: "/resume/"
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
