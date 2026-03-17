@@ -3,16 +3,25 @@ title: "Resume"
 layout: single
 permalink: /resume/
 author_profile: true
-header:
-  overlay_color: "transparent"
 ---
 
 <style>
   .resume-wrapper {
-    font-family: inherit;
-    max-width: 860px;
+    font-family: "Georgia", "Times New Roman", serif;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0;
+  }
+
+  .page__title {
+    display: none;
+  }
+
+  .page__inner-wrap,
+  .page__content {
+    width: 100% !important;
+    max-width: 100% !important;
+    float: none !important;
   }
 
   .resume-header {
@@ -43,6 +52,7 @@ header:
     font-weight: 700;
     letter-spacing: 0.15em;
     text-transform: uppercase;
+    font-family: "Arial", sans-serif;
     color: #007bff;
     border-bottom: 1px solid #007bff;
     padding-bottom: 0.3rem;
@@ -130,15 +140,7 @@ header:
     font-weight: 600;
     min-width: 110px;
     flex-shrink: 0;
-  }
-  .page__title {
-  display: none;
-  }
-  .page__content {
-  width: 100%;
-  }
-  .resume-wrapper {
-  max-width: 100%;
+    font-family: "Arial", sans-serif;
   }
 </style>
 
