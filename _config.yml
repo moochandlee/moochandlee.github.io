@@ -15,12 +15,17 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
 
+description: "Equity research, market analysis, and investment insights by Moochan Daniel Lee."
+
 author:
   name : "Moochan Daniel Lee"
   avatar: "/assets/images/headshot.jpg"
-  bio: "Business Analyst @Capital One"
+  bio: "Equity Research & Investment Analysis"
   url: "/resume/"
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/moochan-lee/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/moochandlee"

@@ -1,0 +1,396 @@
+---
+# Main stylesheet — overrides Minimal Mistakes "air" skin
+---
+
+@import "minimal-mistakes/skins/air";
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   Design Tokens
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+:root {
+  /* Brand */
+  --color-brand:        #1e3a5f;
+  --color-brand-light:  #2d5f8a;
+  --color-accent:       #c59b27;
+  --color-accent-soft:  #f0e6cc;
+
+  /* Surface */
+  --color-bg:           #fcfcfc;
+  --color-surface:      #ffffff;
+  --color-border:       #e2e4e7;
+
+  /* Text */
+  --color-text:         #1a1a1a;
+  --color-text-soft:    #555;
+  --color-text-muted:   #888;
+
+  /* Typography */
+  --font-body:          "Georgia", "Times New Roman", Charter, serif;
+  --font-heading:       -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono:          "SF Mono", "Fira Code", "Fira Mono", Menlo, Consolas, monospace;
+
+  /* Spacing scale */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   Dark Mode — prefers-color-scheme
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg:           #0f1117;
+    --color-surface:      #1a1d27;
+    --color-border:       #2a2d37;
+
+    --color-text:         #e8e8ed;
+    --color-text-soft:    #a0a4b0;
+    --color-text-muted:   #6b6f7c;
+
+    --color-brand:        #4a8fd4;
+    --color-brand-light:  #6baae8;
+    --color-accent:       #d4af37;
+    --color-accent-soft:  #2a2418;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   Base
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 1.05em;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--color-brand);
+  letter-spacing: -0.01em;
+}
+
+h1 { font-size: 2rem; font-weight: 700; }
+h2 { font-size: 1.5rem; font-weight: 600; margin-top: var(--space-xl); }
+h3 { font-size: 1.2rem; font-weight: 600; }
+
+a {
+  color: var(--color-brand-light);
+  text-decoration-color: var(--color-accent);
+  text-underline-offset: 0.2em;
+  transition: color 0.15s ease;
+}
+
+a:hover {
+  color: var(--color-accent);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   Masthead
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.masthead {
+  background-color: var(--color-surface);
+  border-bottom: 2px solid var(--color-brand);
+}
+
+.masthead__inner-wrap {
+  padding: 0.6em 1em;
+}
+
+.site-title {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 0.02em;
+}
+
+.site-subtitle {
+  font-size: 0.8rem;
+  color: var(--color-text-soft);
+  font-style: italic;
+}
+
+.greedy-nav {
+  background-color: transparent;
+}
+
+.greedy-nav a {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 0.85rem;
+  color: var(--color-text-soft) !important;
+}
+
+.greedy-nav a:hover {
+  color: var(--color-brand) !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   Author Sidebar
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.sidebar {
+  background-color: var(--color-surface);
+  border-right: 1px solid var(--color-border);
+  padding: var(--space-lg);
+  opacity: 1;
+}
+
+.author__avatar img {
+  border-radius: 50%;
+  border: 3px solid var(--color-brand);
+  max-width: 140px;
+}
+
+.author__name {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.author__bio {
+  font-size: 0.85rem;
+  color: var(--color-text-soft);
+  line-height: 1.5;
+}
+
+.author__urls-wrapper .author__urls {
+  font-size: 0.85rem;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   Content
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.page__content {
+  font-family: var(--font-body);
+  font-size: 1.05em;
+  line-height: 1.75;
+}
+
+.page__content p {
+  margin-bottom: 1.2em;
+}
+
+.page__content a {
+  color: var(--color-brand-light);
+  text-decoration: underline;
+  text-decoration-color: var(--color-accent);
+  text-underline-offset: 0.2em;
+}
+
+.page__content a:hover {
+  color: var(--color-accent);
+}
+
+.page__title {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--color-brand);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   Archive / Blog List
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.archive__item {
+  padding: var(--space-lg) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.archive__item:first-child {
+  padding-top: 0;
+}
+
+.archive__item-title {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.archive__item-title a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.archive__item-title a:hover {
+  color: var(--color-brand-light);
+}
+
+.archive__item-excerpt {
+  font-size: 0.9rem;
+  color: var(--color-text-soft);
+  line-height: 1.6;
+}
+
+.archive__item-date {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* Tags */
+.page__taxonomy-item {
+  background: var(--color-accent-soft);
+  color: var(--color-brand);
+  border-radius: 3px;
+  padding: 0.15em 0.6em;
+  font-size: 0.75rem;
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   Tables — Research Reports
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.page__content table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+  margin: var(--space-lg) 0 var(--space-xl);
+}
+
+.page__content th {
+  background: var(--color-brand);
+  color: #fff;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.6em 0.9em;
+  text-align: left;
+}
+
+.page__content td {
+  padding: 0.55em 0.9em;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.page__content tr:nth-child(even) td {
+  background: var(--color-surface);
+}
+
+.page__content tr:hover td {
+  background: var(--color-accent-soft);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   Blockquotes — Key Takeaways
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.page__content blockquote {
+  border-left: 4px solid var(--color-accent);
+  background: var(--color-surface);
+  padding: var(--space-md) var(--space-lg);
+  margin: var(--space-lg) 0;
+  font-style: italic;
+  color: var(--color-text-soft);
+  border-radius: 0 4px 4px 0;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   Code
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+code {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 3px;
+  padding: 0.15em 0.4em;
+}
+
+pre {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  padding: var(--space-md);
+  overflow-x: auto;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   Footer
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.page__footer {
+  background-color: var(--color-surface);
+  border-top: 2px solid var(--color-brand);
+  color: var(--color-text-soft);
+  font-size: 0.8rem;
+  padding: var(--space-md) 0;
+}
+
+.page__footer a {
+  color: var(--color-brand-light);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   Utility
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+hr {
+  border: none;
+  border-top: 1px solid var(--color-border);
+  margin: var(--space-xl) 0;
+}
+
+/* Rating badge — used in research reports */
+.rating-badge {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.25em 0.75em;
+  border-radius: 3px;
+}
+
+.rating-overweight { background: #d4edda; color: #155724; }
+.rating-equal-weight { background: #fff3cd; color: #856404; }
+.rating-underweight { background: #f8d7da; color: #721c24; }
+
+@media (prefers-color-scheme: dark) {
+  .rating-overweight { background: #1a3a24; color: #7ddf90; }
+  .rating-equal-weight { background: #3a3518; color: #e0c868; }
+  .rating-underweight { background: #3a1a1d; color: #e07d84; }
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   Responsive
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+@media (max-width: 768px) {
+  .page__content {
+    font-size: 1em;
+  }
+
+  .page__content table {
+    font-size: 0.75rem;
+  }
+
+  .page__content th,
+  .page__content td {
+    padding: 0.4em 0.5em;
+  }
+
+  h1 { font-size: 1.6rem; }
+  h2 { font-size: 1.3rem; }
+}
