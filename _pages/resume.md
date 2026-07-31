@@ -10,12 +10,6 @@ author_profile: true
     display: none;
   }
 
-  .page {
-    width: 95% !important;
-    max-width: 1600px !important;
-    margin: 0 auto !important;
-  }
-
   .resume-wrapper {
     font-family: "Georgia", "Times New Roman", serif;
     max-width: 100%;

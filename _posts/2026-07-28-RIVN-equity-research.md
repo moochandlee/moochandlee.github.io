@@ -4,6 +4,10 @@ layout: single
 permalink: /rivn-er/
 date: 2026-07-28
 tags: [Automotive, EVs, Growth, Initiation]
+excerpt: "Overweight rating, $24 PT. R2 scaling + VW JV + Software & Services segment undervalued at 0.7x forward EV/Revenue."
+author_profile: true
+sidebar:
+  nav: "rivian_report"
 ---
 
 # Rivian Automotive, Inc. (RIVN — NASDAQ)

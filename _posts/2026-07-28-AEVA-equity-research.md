@@ -4,6 +4,10 @@ layout: single
 permalink: /aeva-er/
 date: 2026-07-28
 tags: [Technology, LiDAR, Autonomous Driving, Initiation]
+excerpt: "Equal-Weight rating, $20 PT. Best-in-class FMCW LiDAR technology, but 2028 SOP timeline keeps us cautious at 32x forward sales."
+author_profile: true
+sidebar:
+  nav: "aeva_report"
 ---
 
 # Aeva Technologies, Inc. (AEVA — NASDAQ)

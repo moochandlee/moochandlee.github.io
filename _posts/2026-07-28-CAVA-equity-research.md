@@ -4,6 +4,10 @@ layout: single
 permalink: /cava-er/
 date: 2026-07-28
 tags: [Restaurants, Consumer, Growth, Initiation]
+excerpt: "Overweight rating, $98 PT. Category-defining Mediterranean fast-casual with 25.1% margins and a 1,000-store runway."
+author_profile: true
+sidebar:
+  nav: "cava_report"
 ---
 
 # Cava Group, Inc. (CAVA — NYSE)
