@@ -11,7 +11,7 @@ author_profile: true
   }
 
   .resume-wrapper {
-    font-family: "Georgia", "Times New Roman", serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     max-width: 100%;
     margin: 0 auto;
     padding: 0;
@@ -19,41 +19,41 @@ author_profile: true
 
   .resume-header {
     text-align: center;
-    margin-bottom: 1.5rem;
-    padding-bottom: 1rem;
-    border-bottom: 2px solid #007bff;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid var(--color-accent);
   }
 
   .resume-header h1 {
-    font-size: 1.8rem;
-    font-weight: 700;
+    font-size: 2rem;
+    font-weight: 800;
     margin-bottom: 0.3rem;
-    letter-spacing: 0.05em;
+    letter-spacing: -0.02em;
   }
 
   .resume-header .contact {
     font-size: 0.85rem;
-    opacity: 0.75;
+    color: var(--color-text-soft);
   }
 
   .resume-section {
-    margin-bottom: 1.8rem;
+    margin-bottom: 2rem;
   }
 
   .resume-section h2 {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     font-weight: 700;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    font-family: "Arial", sans-serif;
-    color: #007bff;
-    border-bottom: 1px solid #007bff;
-    padding-bottom: 0.3rem;
-    margin-bottom: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--color-accent);
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: 0.4rem;
+    margin-bottom: 1.2rem;
   }
 
   .resume-entry {
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.4rem;
   }
 
   .resume-entry-header {
@@ -72,7 +72,7 @@ author_profile: true
 
   .resume-entry-header .location {
     font-size: 0.8rem;
-    opacity: 0.65;
+    color: var(--color-text-soft);
   }
 
   .resume-entry-subheader {
@@ -92,23 +92,23 @@ author_profile: true
 
   .resume-entry-subheader .dates {
     font-size: 0.8rem;
-    opacity: 0.65;
+    color: var(--color-text-soft);
   }
 
   .resume-entry ul {
     margin: 0;
     padding-left: 1.2rem;
-    font-size: 0.88rem;
-    line-height: 1.6;
+    font-size: 0.9rem;
+    line-height: 1.7;
   }
 
   .resume-entry ul li {
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.35rem;
   }
 
   .resume-entry p {
-    font-size: 0.88rem;
-    line-height: 1.6;
+    font-size: 0.9rem;
+    line-height: 1.7;
     margin: 0.2rem 0;
   }
 
@@ -118,8 +118,8 @@ author_profile: true
   }
 
   .skills-grid {
-    font-size: 0.88rem;
-    line-height: 1.8;
+    font-size: 0.9rem;
+    line-height: 1.9;
   }
 
   .skills-grid .skill-row {
@@ -133,7 +133,7 @@ author_profile: true
     font-weight: 600;
     min-width: 110px;
     flex-shrink: 0;
-    font-family: "Arial", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   }
 </style>
 
