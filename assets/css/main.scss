@@ -1,8 +1,7 @@
 ---
-# Main stylesheet — overrides Minimal Mistakes "air" skin
 ---
 
-@import "minimal-mistakes/skins/air";
+@import "minimal-mistakes";
 
 /* ═══════════════════════════════════════════════════════════════════════════
    Design Tokens
@@ -176,12 +175,6 @@ a:hover {
   font-family: var(--font-body);
   font-size: 1.05em;
   line-height: 1.75;
-  max-width: 72ch;
-}
-
-/* Wider content for pages without sidebar nav (home, resume) */
-.page__content--wide {
-  max-width: none;
 }
 
 .page__content p {
